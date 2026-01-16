@@ -9,7 +9,7 @@ class ExampleTest extends TestCase
 {
     /**
      * A basic test example.
-     * 
+     *
      * Verifica que la aplicación responde correctamente.
      * Usa el endpoint de API en lugar de rutas web para evitar dependencia de Vite.
      */
