@@ -10,22 +10,21 @@ jobs:
   laravel-tests:
     runs-on: ubuntu-latest
 
-    services:
-      
-      # Si necesitas una base de datos real para tests, descomenta esto.
-      # Por defecto usaremos SQLite en memoria para rapidez.
-      # mysql:
-      #   image: mysql:8.0
-      #   env:
-      #     MYSQL_ROOT_PASSWORD: password
-      #     MYSQL_DATABASE: laravel
-      #   ports:
-      #     - 3306:3306
-      #   options: >-
-      #     --health-cmd="mysqladmin ping"
-      #     --health-interval=10s
-      #     --health-timeout=5s
-      #     --health-retries=3
+    # Si necesitas una base de datos real para tests, descomenta la sección services.
+    # Por defecto usaremos SQLite en memoria para rapidez.
+    # services:
+    #   mysql:
+    #     image: mysql:8.0
+    #     env:
+    #       MYSQL_ROOT_PASSWORD: password
+    #       MYSQL_DATABASE: laravel
+    #     ports:
+    #       - 3306:3306
+    #     options: >-
+    #       --health-cmd="mysqladmin ping"
+    #       --health-interval=10s
+    #       --health-timeout=5s
+    #       --health-retries=3
 
     steps:
       - uses: actions/checkout@v4
