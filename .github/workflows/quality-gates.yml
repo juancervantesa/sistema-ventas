@@ -35,7 +35,7 @@ jobs:
 
       # Paso 3: Instalar dependencias de PHP
       - name: Install Composer Dependencies
-        run: composer update -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+        run: composer install -q --no-ansi --no-interaction --no-progress --prefer-dist
 
       # Paso 5: GATE 1 - Verificar estilo de código con Laravel Pint
       - name: "Gate 1: Code Style (Laravel Pint)"
